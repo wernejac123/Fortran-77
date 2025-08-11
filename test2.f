@@ -1,0 +1,39 @@
+C ANOTHER TEST FOR GFORTRAN
+C FIXED BY ADDING IMPLICIT NONE TO SUBROUTINE
+      SUBROUTINE PRNT(STR, N)
+      IMPLICIT NONE
+      INTEGER STR(*), N, I
+
+      DO 10 I=1, N
+         WRITE(*, 20) I, STR(I)
+10    CONTINUE
+20    FORMAT('STR(', I1, ')=', I3)
+      RETURN
+      END
+
+      PROGRAM TEST2
+
+      IMPLICIT NONE
+C DECLARE VARIABLES
+      INTEGER NUM1, STR(5)
+      REAL NUM2
+      CHARACTER A
+
+C INITIALIZE ARRAY
+      NUM1 = 12
+      NUM2 = 15.6
+      STR(1) = 3
+      STR(2) = 6
+      STR(3) = 9
+      STR(4) = 12
+      STR(5) = 15
+      A = 'C'
+
+C PRINT VARIABLES
+      WRITE(*,*) 'NUM1=', NUM1
+      WRITE(*,*) 'NUM2=', NUM2
+      CALL PRNT(STR, 5)
+      WRITE(*,*) 'A=', A
+
+      STOP
+      END
