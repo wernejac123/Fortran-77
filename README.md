@@ -14,6 +14,7 @@ strip file_name
 
 -struct.f was compiled in gfrotran in linux using:
 gfortran -std=legacy -fdec-structure -g -Wall -Werror -Wextra -Wconversion struct.f -o struct
+
 strip -s struct
 
 -structures are not a standard feature in Fortran. I did not test this in FreeDOS
