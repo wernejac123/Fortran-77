@@ -11,3 +11,9 @@ gfortran -std=legacy -Wall -Wextra
 strip file_name 
 
 -A few of these programs I got from James Hall on the FreeDOS youtube channel with minor changes like adding STOP and indenting loops.
+
+-struct.f was compiled in gfrotran in linux using:
+gfortran -std=legacy -fdec-structure -g -Wall -Werror -Wextra -Wconversion struct.f -o struct
+strip -s struct
+
+-structures are not a standard feature in Fortran. I did not test this in FreeDOS
