@@ -1,0 +1,12 @@
+C SUBROUTINE TO PRINT AN ARRAY 
+      SUBROUTINE PRINT(X,N)
+      IMPLICIT NONE
+      DOUBLEPRECISION X(*)
+      INTEGER N,I
+
+      DO 10 I=1,N,1
+      WRITE(*,*) X(I)
+10    CONTINUE
+
+      RETURN
+      END
