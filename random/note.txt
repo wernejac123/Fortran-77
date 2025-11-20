@@ -1,6 +1,6 @@
 1) In FORTRAN 77 there is no standard way to generate random numbers (its entirely dependent on compiler extentions)
 2) This uses a a method to generate psudo-random numbers using 'Linear Congruence Method'
-3) I made it so 200 random numbers (truncated to integers with INT()) are generated 
+3) I made it so 200 random numbers in the range of 0-9 (truncated to integers with INT()) are generated 
 4) It includes a test that prints the number of occurance of each number (to see how evenly distributed it is)
 5) To get truly random numbers the seed needs to change somehow everytime the program is ran; same seed=same results
 6) The document I used which has more information of the formula:
