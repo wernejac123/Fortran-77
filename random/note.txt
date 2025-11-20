@@ -1,0 +1,17 @@
+1) In FORTRAN 77 there is no standard way to generate random numbers (its entirely dependent on compiler extentions)
+2) This uses a a method to generate psudo-random numbers using 'Linear Congruence Method'
+3) I made it so 200 random numbers (truncated to integers with INT()) are generated 
+4) It includes a test that prints the number of occurance of each number (to see how evenly distributed it is)
+5) To get truly random numbers the seed needs to change somehow everytime the program is ran; same seed=same results
+6) The document I used which has more information of the formula:
+
+ https://www.geeksforgeeks.org/dsa/linear-congruence-method-for-generating-pseudo-random-numbers/
+
+7) I don't really know what range the seed needs to be in other than it has to be less than 0xffffffff (which should be the maximum 
+value of a 4 byte integer since seed is declared as INTEGER. I would assume (BUT I DON'T KNOW) the seed should probably be less than 
+M, but this is purely a guess 
+
+8) Changing the values of A,C,M, and SEED does affect results. 
+9) From this test, it appears the random number are DOUBLEPRECISION numbers between 0 to 1, but I can't say for sure if it always stays 
+in that range. 
+10) This program is purely experimental 
