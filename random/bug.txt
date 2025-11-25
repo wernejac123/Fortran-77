@@ -1,7 +1,7 @@
 my DRAND() subroutine never generates the number 1 so its actually 0 to less than 1.
 to compensate for this, DINT() could be used instead of INT(), which rounds up or down depending on if its greater than or less than .5
-this would change it so it create numbers in the range of 1 to 10 (if using this code)
+this would change it so it create numbers in the range of 0 to 10 (if using this code)
 
-The number 0 and 10 occur significantly less than the other numbers, soo this isn't evenly distributed random numbers
+The number 0 and 10 occur significantly less than the other numbers, so this isn't evenly distributed random numbers
 
 I have not eddited the code yet to add this.
