@@ -17,4 +17,4 @@ gfortran -std=legacy -fdec-structure -g -Wall -Werror -Wextra -Wconversion struc
 
 strip -s struct
 
--structures are not a standard feature in Fortran. I did not test this in FreeDOS
+-structures are not a standard feature in Fortran. struct.f did compile in FreeDOS too.
