@@ -18,3 +18,5 @@ gfortran -std=legacy -fdec-structure -g -Wall -Werror -Wextra -Wconversion struc
 strip -s struct
 
 -structures are not a standard feature in Fortran. struct.f did compile in FreeDOS too.
+
+BUG: as of Apr 5, 2026 there is a bug where my programs are losing precision (calculating numbers as REAL instead of DOUBLEPRECISON). NOTE TO SELF: fix this by using D like 3.0D0 (DOUBLEPRECISION engineering notation) for all numbers including input from user)
